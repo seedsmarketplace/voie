@@ -1,0 +1,84 @@
+    <div class="container_12">
+        <div class="grid_12 header-repeat">
+            <div id="branding">
+                <div class="floatleft">
+                    <span style="color:#ffffff;font-size:20pt">SEEDS Market Place</span>
+                </div>
+                <div class="floatright">
+                    <div class="floatleft marginleft10">
+                        <ul class="inline-ul floatleft">
+                        	{{#compare appState.user "!=" null "and" appState.user.username "!=" null}} 
+	                            <li>Hello {{appState.user.username}}</li>
+	                            <li><a href="#logout/">Logout</a></li>
+	                        {{else}}
+	                        	<li>Hello Guest</li>
+	                        	<li><span><a href="#login/">Login</a></span>  <span><a href="#register/">Register</a></span></li>
+	                        {{/compare}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="grid_12">
+            <ul class="nav main">
+                <li class="ic-dashboard"><a href="#home/"><span>Home</span></a> </li>
+                <li class="ic-form-style"><a href="#mission/"><span>Mission</span></a>
+                	<!--  
+                    <ul>
+                        <li><a href="#partners/">Forms</a> </li>
+                        <li><a href="#team/">Buttons</a> </li>
+                        <li><a href="form-controls.html">Full Page Example</a> </li>
+                        <li><a href="table.html">Page with Sidebar Example</a> </li>
+                    </ul>
+                    -->
+                </li>
+                <li class="ic-typography"><a href="#partners/"><span>Partners</span></a></li>
+				<li class="ic-charts"><a href="#team/"><span>Team</span></a></li>
+                <li class="ic-grid-tables"><a href="#about/"><span>About</span></a></li>
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+         
+        <div class="grid_2">
+            <div class="box sidemenu">
+                <div class="block" id="section-menu">
+                    <ul class="section menu">
+                        <li><a class="menuitem">Job Seekers</a>
+                            <ul class="submenu">
+                                <li><a>Browse courses</a> </li>
+                                <li><a>Update skills</a></li>
+                                <li><a>Search jobs</a></li>
+                                <li><a>Find a coach</a></li>
+                                <li><a>Find a sponsor</a></li>
+                                <li><a>Talk to an expert</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menuitem">Employers</a>
+                            <ul class="submenu">
+                                <li><a>Find talent</a> </li>
+                                <li><a>Add a req.</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menuitem">Service Providers</a>
+                            <ul class="submenu">
+                                <li><a>Add a course</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-main"></div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="site_info">
+        <p>
+            Copyright <a href="#home/">SEEDS Marketplace Inc.</a>. All Rights Reserved.
+        </p>
+    </div>
