@@ -7,19 +7,19 @@ require.config({
     libs: "../assets/js/libs",
 
     // Libraries.
-    jquery: "../assets/js/libs/jquery",
+    jquery: "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min", //"../assets/js/libs/jquery",
     underscore: "../assets/js/libs/underscore", //CHECK IF LOADDASH IS SAME AS UNDERSCORE
     backbone: "../assets/js/libs/backbone",
     handlebars: "../assets/js/libs/handlebars-1.0.0.beta.6",
     
     //Jquery Plugins
-    jqueryUI : "../assets/js/jquery-ui/jquery.ui.core.min",
-    jqueryUIWidget : "../assets/js/jquery-ui/jquery.ui.widget.min",
-    jqueryUIAccordion : "../assets/js/jquery-ui/jquery.ui.accordion.min",
-    jqueryEffects : "../assets/js/jquery-ui/jquery.effects.core.min",
-    jqueryEffectsSlide : "../assets/js/jquery-ui/jquery.effects.slide.min",
-    jquerySlider : "../assets/js/jquery-ui/jquery.ui.slider.min",
-    jqueryMouse : "../assets/js/jquery-ui/jquery.ui.mouse.min",
+    jqueryUI :"http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min", //"../assets/js/jquery-ui/jquery.ui.core.min",
+//    jqueryUIWidget : "../assets/js/jquery-ui/jquery.ui.widget.min",
+//    jqueryUIAccordion : "../assets/js/jquery-ui/jquery.ui.accordion.min",
+//    jqueryEffects : "../assets/js/jquery-ui/jquery.effects.core.min",
+//    jqueryEffectsSlide : "../assets/js/jquery-ui/jquery.effects.slide.min",
+//    jquerySlider : "../assets/js/jquery-ui/jquery.ui.slider.min",
+//    jqueryMouse : "../assets/js/jquery-ui/jquery.ui.mouse.min",
     
     //JQPlot
     //<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="assets/js/jqPlot/excanvas.min.js"></script><![endif]-->
@@ -68,30 +68,30 @@ require.config({
       deps: ["jquery"]
     },
     
-    jqueryUIWidget :{
-    	deps: ["jquery"]	
-    },
-    
-    jqueryUIAccordion :{
-    	deps: ["jquery"]	
-    },
-    
-    jqueryEffects :{
-    	deps: ["jquery"]	
-    },
-    
-    jqueryEffectsSlide : {
-    	deps: ["jquery"]
-    },
-    
-    jqueryMouse : {
-    	deps: ["jquery","jqueryUI"]
-    },
-    
-    jquerySlider : {
-    	deps: ["jquery","jqueryUI","jqueryMouse"]
-    },
-    
+//    jqueryUIWidget :{
+//    	deps: ["jquery"]	
+//    },
+//    
+//    jqueryUIAccordion :{
+//    	deps: ["jquery"]	
+//    },
+//    
+//    jqueryEffects :{
+//    	deps: ["jquery"]	
+//    },
+//    
+//    jqueryEffectsSlide : {
+//    	deps: ["jquery"]
+//    },
+//    
+//    jqueryMouse : {
+//    	deps: ["jquery","jqueryUI"]
+//    },
+//    
+//    jquerySlider : {
+//    	deps: ["jquery","jqueryUI","jqueryMouse"]
+//    },
+//    
     
     jqueryJQPlot : {
     	deps: ["jquery"]

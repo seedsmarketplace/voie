@@ -90,10 +90,10 @@ h2#page-heading {
 ----------------------------------------------- */
 .box {
 	background:#fff;
-	margin-bottom:20px;
+	margin-bottom:5px;
 	padding:10px 10px 10px 10px; margin-left:-8px;
 }
-.box.grid{padding-bottom:40px;}
+.box.grid{padding-bottom:10px;}
 .box.round{
 	  -moz-border-radius: 5px 5px 0px 0px; /* Firefox */
 	  -webkit-border-radius: 5px 5px 0px 0px; /* Safari, Chrome */
@@ -146,7 +146,7 @@ h2#page-heading {
 	background-color:transparent;
 }
 
-.box.first{margin-top:20px;}
+.box.first{margin-top:1px;}
 
 .block {
 	padding-top:20px;
@@ -1144,5 +1144,8 @@ td.details {
     text-shadow: 0 1px 0 #fff;
 }
 
+.careerPathSliderIndicator{
+	position:relative; left:33%;
+}
 
 .gallery-sand .sorting{background-color:white !important;}

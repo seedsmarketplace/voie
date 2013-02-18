@@ -32,10 +32,13 @@ define([
 		
 		onRenderComplete : function(){
 			$( "#jobGradeSlider" ).slider({
-				value: 60,
-			    orientation: "horizontal",
-			    range: "min",
-			     animate: true				
+				  value:1,
+			      min: 1,
+			      max: 5,
+			      step: 1,
+			      slide: function( event, ui ) {
+			        $( "#amount" ).val( "$" + ui.value );
+			      }
 			});
 		},
 	});

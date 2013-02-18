@@ -3,12 +3,12 @@ require([
  "handlebarHelpers",
  
  "jqueryUI",
- "jqueryUIWidget",
- "jqueryUIAccordion",
- "jqueryEffects",
- "jqueryEffectsSlide",
- "jquerySlider",
- "jqueryMouse",
+// "jqueryUIWidget",
+// "jqueryUIAccordion",
+// "jqueryEffects",
+// "jqueryEffectsSlide",
+// "jquerySlider",
+// "jqueryMouse",
 // 
 // "jqueryJQPlot",
 // "jqueryJQPlotBarRenderer",
@@ -24,8 +24,8 @@ require([
   "domainControllers/domainControllers"
 ],
 
-function(fnUtils,handlebarHelpers,
-		a,b,c,d,e,f,g,
+function(fnUtils,handlebarHelpers,jqueryUI,
+		//a,b,c,d,e,f,g,
 		//f,g,h,i,j,k,
 		Router,utils,appStateIns,navigationIns,DomainControllers) {
 
