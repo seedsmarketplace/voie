@@ -25,13 +25,13 @@ SeedData = {
 	data : {
 		//Application Session
 		"read-seeds/service/session" : {
-			//user : {}
-			user : {
-				username : "js",
-				name : "Job Seeker",
-				password : "js",
-				roles : ["JS"]
-			}
+			user : {}
+//			user : {
+//				username : "js",
+//				name : "Job Seeker",
+//				password : "js",
+//				roles : ["JS"]
+//			}
 		},
 		
 		"read-seeds/service/get_user/js" : {
