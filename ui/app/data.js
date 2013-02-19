@@ -62,6 +62,12 @@ SeedData = {
 			roles : ["ADMIN"] 
 		},
 		
+		"read-seeds/service/get_user/sp" : {
+			username : "sp",
+			password : "sp",
+			name : "Service Provicer",
+			roles : ["SP"] 
+		},
 		
 	}
 	

@@ -4,7 +4,7 @@ define([  //Services
           "services/renderUtil",
           "services/templateUtil",
           "services/class",
-          "Services/validate"
+          "services/validate"
           
 ],function(Backbone,Logger,RenderUtil,TemplateUtil,Class,Validate){
 	

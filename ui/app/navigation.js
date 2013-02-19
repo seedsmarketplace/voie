@@ -11,6 +11,11 @@ define([
 		            	 domain : "webSite"
 		             },
 		             {
+		            	 name : "logout", 
+		            	 path : "logout/*path",
+		            	 domain : "webSite"
+		             },		             
+		             {
 		            	 name : "resigter", 
 		            	 path : "register/*path",
 		            	 domain : "webSite"

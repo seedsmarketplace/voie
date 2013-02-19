@@ -35,7 +35,6 @@ define([
 				});
 			}
 			if(!isUserAuthorized){
-				alert("Unauthorized");
 				Backbone.history.navigate("#home/",true);//Send to unauthorized
 				return;
 			}

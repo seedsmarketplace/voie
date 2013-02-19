@@ -18,7 +18,8 @@ define([
 			url : function(params){
 				params = params || {};
 				return "seeds/service/get_courses";
-			}
+			},
+			
 			
 		 });	
 		

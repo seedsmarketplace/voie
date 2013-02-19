@@ -3,6 +3,7 @@ define([
     'underscore',
     'backbone',
     'utils',
+    "models/appState",
     'domainControllers/baseController',
     'views/website/defaultLayout',
     'views/website/loginSignupLayout',
@@ -11,7 +12,9 @@ define([
     'views/website/partners',
     'views/website/team',
     'views/website/login',
-], function($, _, Backbone,utils,BaseController,DefaultWebSiteLayout,LoginSignupLayout,
+], function($, _, Backbone,utils,
+		appStateIns,
+		BaseController,DefaultWebSiteLayout,LoginSignupLayout,
 		HomeViewDef,MissionViewDef,PartnersViewDef,
 		TeamViewDef,LoginViewDef){
 
@@ -37,6 +40,10 @@ define([
 			else if(page.name == "login"){
 				pageViewDef = LoginViewDef;
 				layoutViewDef = LoginSignupLayout;
+			}
+			else if(page.name == "logout"){
+				appStateIns.set({user:null},{silent : true});
+				Backbone.history.navigate("#home/",true);			
 			}
 			
 			return {

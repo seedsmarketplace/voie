@@ -29,7 +29,7 @@ define([
 			controller = EmpPortalControllerIns;
 			break;
 		case "expPortal" : 
-			controller = ExpPortalControllerins;
+			controller = ExpPortalControllerIns;
 			break;
 		case "adminPortal" : 
 			controller = AdminPortalControllerIns;
