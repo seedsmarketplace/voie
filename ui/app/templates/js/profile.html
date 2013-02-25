@@ -1,4 +1,6 @@
 
+<div id="shadepart" style="margin-top: -120px"></div>
+
 <div class="grid_2">
 	<div class="box round first grid" style="height: 500px;">
 		<h2>Profile</h2>
@@ -137,35 +139,257 @@
 							<button class="btn btn-orange addskill">Add Skills</button>
 						</span>
 					</h1>
-					<div style="background-color: #fff;">
-						<div id="dialog"
-							style="display: none; background-color: #fff; border-bottom-style: solid; background-color: 1px;"
-							class="lightboxcontainer">
-							<span style="float: right;"><a class="closebut">Close</a></span>
-							<div>
+					<div style="background-color: #fff; position: relative;">
 
-								<select class="skillset">
-									<option value="net">Dot Net</option>
-									<option value="hib">Hibernate</option>
-									<option value="Cs">Communication Skill</option>
-								</select>
 
-								<div class="saq net">QA 1</div>
-								<div class="saq hib">QA 2</div>
-								<div class="saq Cs">QA 3</div>
-
+						<div id="lightbase" style="margin-top: -60px;">
+							<div id="closebut" style="text-align: right">
+								<img src="assets/images/close.png" style="cursor: pointer">
 							</div>
+<form>
+
+							<div class="lightboxcontainersaq">
+
+								<div>
+
+									Choose Skill Set: <select class="skillset">
+										<option value="none">--Select--</option>
+										<option value="net">Dot Net</option>
+										<option value="hib">Hibernate</option>
+										<option value="Cs">Communication Skill</option>
+									</select>
+									<div style="border-bottom: 1px solid #333333; height: 10px"></div>
+
+									<div class="saq net">
+										<table cellspacing="0px" class="saqtable">
+											<tr class="questions">
+												<td>1 . Years of experience ?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q1" value="1">
+													none &gt;2 &nbsp; <input type="radio" name="q1" value="1">
+													2-5 &nbsp; <input type="radio" name="q1" value="1">
+													5-8 &nbsp; <input type="radio" name="q1" value="1">
+													&gt; 8 &nbsp; <input type="radio" name="q1" value="1">
+													<br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>2 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q2" value="1"> 
+												0 to 1 &nbsp; <input type="radio" name="q2" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>3 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q3" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q3" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>4 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q4" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q4" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>5 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q5" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q5" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+
+										</table>
+
+
+
+									</div>
+									<div class="saq hib">
+										<table cellspacing="0px" class="saqtable">
+											<tr class="questions">
+												<td>1 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q1" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q1" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q1" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q1" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q1" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>2 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q2" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q2" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>3 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q3" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q3" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>4 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q4" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q4" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>5 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q5" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q5" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+
+										</table>
+									</div>
+									<div class="saq Cs">
+										<table cellspacing="0px" class="saqtable">
+											<tr class="questions">
+												<td>1 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q1" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q1" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q1" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q1" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q1" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>2 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q2" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q2" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q2" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>3 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q3" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q3" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q3" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>4 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q4" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q4" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q4" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+											<tr class="questions">
+												<td>5 . How many is your current experience?</td>
+											</tr>
+											<tr class="answers">
+												<td><input type="radio" name="q5" value="1"> 0
+													to 1 &nbsp; <input type="radio" name="q5" value="1">
+													2 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 &nbsp; <input type="radio" name="q5" value="1">
+													0 to 5 <br></td>
+											</tr>
+
+
+
+										</table>
+									</div>
+
+								</div>
+							</div>
+
+</form>
+
 						</div>
 					</div>
 					<ul id="gray" class="treeview-gray">
-						<li><span>Java Development</span>
+						<li style="background-image: none;"><span>Java Development</span>
 							<ul>
 								<li><span>Years of experience(&gt;8 years)</span></li>
 								<li><span>Core (5/5)</span></li>
 								<li><span>Thread programming (5/5)</span></li>
 								<li><span>Socket programming(5/5)</span></li>
 							</ul></li>
-						<li><span>J2EE</span>
+						<li style="background-image: none;"><span>J2EE</span>
 							<ul>
 								<li><span>Years of experience in JMS (5-8 years)</span></li>
 								<li><span>Years of experience in JSP (5-8 years)</span></li>
@@ -173,21 +397,21 @@
 										years)</span></li>
 								<li><span>Web Services SOAP (5-8 years)</span></li>
 							</ul></li>
-						<li><span>Java Framework Spring</span>
+						<li style="background-image: none;"><span>Java Framework Spring</span>
 							<ul>
 								<li><span>Core Spring (5/5)</span></li>
 								<li><span>Spring MVC (5/5)</span></li>
 								<li><span>Spring Security (5/5)</span></li>
 								<li><span>Spring Integration (5/5)</span></li>
 							</ul></li>
-						<li><span>Software Design</span>
+						<li style="background-image: none;"><span>Software Design</span>
 							<ul>
 								<li><span>Year of Experience (5-8 years )</span></li>
 								<li><span>OOP (5/5)</span></li>
 								<li><span>Thread programming (5/5)</span></li>
 								<li><span>Socket programming(5/5)</span></li>
 							</ul></li>
-						<li><span>Technical Leadership</span>
+						<li style="background-image: none;"><span>Technical Leadership</span>
 							<ul>
 								<li><span>Years of experience(&gt;8 years)</span></li>
 								<li><span>Ave. Team Size (4-10 members)</span></li>

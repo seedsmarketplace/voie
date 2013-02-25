@@ -23,7 +23,7 @@ define([
 			"click .menuitem":"_doSwitch",
 			"click .addskill":"_openDilog",
 			"change .skillset":"_renderSAQ",
-			"click closebut":"_closeSAQ"
+			"click #closebut":"_closeSAQ"
 		},
 		
 		render : function(){
@@ -42,12 +42,14 @@ define([
 		},
 		_openDilog: function() {
 			$("#lightbase").fadeIn(600);
-			$("#dialog").fadeIn(600);
+			$("#shadepart").fadeTo(500, 0.8);
+
 		},
 		_closeSAQ:function(){
-			
+			//$("form").reset();
 			$("#lightbase").fadeOut();
-			$("#dialog").fadeOut();
+			$("#shadepart").fadeOut(500);
+
 		},
 		_renderSAQ:function(event){
 			
@@ -66,6 +68,7 @@ define([
 			$("div.active").show();
 			$(".saq").hide();
 			$("#gray").treeview();
+			
 	
 		},
 	});

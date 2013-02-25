@@ -39,7 +39,7 @@ define([
 		
 		_startLightBox : function(event) {
 			var d = $(event.target).parent().index();
-
+		
 			$("#lightbase").fadeIn();
 			$("#loading").fadeIn(1000);
 			$("#loading").fadeOut(1000, function() {
@@ -63,7 +63,8 @@ define([
 			$(".light1").fadeIn(500);
 		},
 		_doFilter : function(event) {
-
+			$(".selected").removeClass("selected");
+			$(event.target).parent().addClass("selected");
 			var citemid = $(event.target).attr("id");
 			$(".light1."+pitemid).fadeOut(500,function(){$(".light1."+citemid).fadeIn(500);});	
 			pitemid = citemid;
@@ -75,9 +76,9 @@ define([
 		
 		onRenderComplete : function(){
 			window.e = 0;
-			window.pitemid = "sap";
+			window.pitemid = "all";
 			$(".light1").hide();
-			$(".light1.sap").show();
+			$(".light1.all").show();
 
 		}
 	  
