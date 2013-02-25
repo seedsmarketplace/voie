@@ -13,10 +13,17 @@ define([
 		name : "ProfileView",
 		
 		
-		templateName : 'js/Profile',
+		templateName : 'js/profile',
 		
 		initialize : function(){
 			_.bindAll(this);
+		},
+		
+		events:{
+			"click .menuitem":"_doSwitch",
+			"click .addskill":"_openDilog",
+			"change .skillset":"_renderSAQ",
+			"click closebut":"_closeSAQ"
 		},
 		
 		render : function(){
@@ -26,20 +33,40 @@ define([
 			
 			return this;
 		},
+		_doSwitch:function(event){
+			
+			var section=$(event.target).attr('data-type');
+			$("div.info").hide();
+			$('div[data-type="'+section+'"]').show();
+		 
+		},
+		_openDilog: function() {
+			$("#lightbase").fadeIn(600);
+			$("#dialog").fadeIn(600);
+		},
+		_closeSAQ:function(){
+			
+			$("#lightbase").fadeOut();
+			$("#dialog").fadeOut();
+		},
+		_renderSAQ:function(event){
+			
+			var saq=$(event.target).val();
+			$(".saq").hide();
+			$("."+saq).show();
+			
+			
+		},
 		
 		onDataReady : function(){
 		},
 		
 		onRenderComplete : function(){
-			$( "#jobGradeSlider" ).slider({
-				  value:1,
-			      min: 1,
-			      max: 5,
-			      step: 1,
-			      slide: function( event, ui ) {
-			        $( "#amount" ).val( "$" + ui.value );
-			      }
-			});
+			$("div.info").hide();
+			$("div.active").show();
+			$(".saq").hide();
+			$("#gray").treeview();
+	
 		},
 	});
 		

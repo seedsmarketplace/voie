@@ -3,6 +3,8 @@ require([
  "handlebarHelpers",
  
  "jqueryUI",
+ "lightBox",
+ "treeView",
 // "jqueryUIWidget",
 // "jqueryUIAccordion",
 // "jqueryEffects",
@@ -24,7 +26,7 @@ require([
   "domainControllers/domainControllers"
 ],
 
-function(fnUtils,handlebarHelpers,jqueryUI,
+function(fnUtils,handlebarHelpers,jqueryUI,lightBox,treeView,
 		//a,b,c,d,e,f,g,
 		//f,g,h,i,j,k,
 		Router,utils,appStateIns,navigationIns,DomainControllers) {

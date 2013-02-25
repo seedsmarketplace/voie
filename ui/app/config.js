@@ -28,7 +28,9 @@ require.config({
     jqueryJQPlotPilotRenderer : "../assets/js/jqPlot/plugins/jqplot.pieRenderer.min",
     jqueryJQAxisRenderer : "../assets/js/jqPlot/plugins/jqplot.categoryAxisRenderer.min",
     jqueryJQHighlighter : "../assets/js/jqPlot/plugins/jqplot.highlighter.min",
-    jqueryJQLabels : "../assets/js/jqPlot/plugins/jqplot.pointLabels.min",   
+    jqueryJQLabels : "../assets/js/jqPlot/plugins/jqplot.pointLabels.min", 
+    lightBox:'../assets/js/table/jquery.dataTables.min',
+    treeView:'../assets/js/tree-view/jquery.treeview',
     
     //Common Services
     utils : "services/utils",
@@ -37,7 +39,7 @@ require.config({
     fnUtils : "ext/function/functionUtils", 	//Add utility methods to the function prototype. This path would never have to be included
     handlebarHelpers : "ext/handlebars/handlebarsHelpers", //Register Handlebar helpers. This path would never have to be included	
     backboneExt : "ext/backbone/extensions",
-    
+ 
     
     
   },
@@ -115,7 +117,15 @@ require.config({
     
     jqueryJQLabels : {
     	deps: ["jquery"]
-    }    
+    }, 
+        
+    lightBox:{
+    	deps: ["jquery"]
+    	
+    },
+    treeView:{
+    	deps:["jquery"]
+    }
     
   },
   

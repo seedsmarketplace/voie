@@ -30,7 +30,7 @@ Github site: http://github.com/razorjack/quicksand
             dy: 0
         };
         $.extend(options, customOptions);
-        
+        if($.browser)
         if ($.browser.msie || (typeof($.fn.scale) == 'undefined')) {
             // Got IE and want scaling effect? Kiss my ass.
             options.useScaling = false;
@@ -58,7 +58,7 @@ Github site: http://github.com/razorjack/quicksand
             var offsets = []; // coordinates of every source collection item            
             
             var $source = $(this).find(options.selector); // source collection items
-            
+            if($.browser)
             // Replace the collection and quit if IE6
             if ($.browser.msie && $.browser.version.substr(0,1)<7) {
                 $sourceParent.html('').append($collection);

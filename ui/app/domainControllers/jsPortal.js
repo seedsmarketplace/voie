@@ -6,8 +6,11 @@ define([
     'domainControllers/baseController',
     'views/js/defaultLayout',
     'views/js/jsDashboard',
-    'views/js/careerPath'
-], function($, _, Backbone,utils, BaseController,DefaultLayoutDef,JSDashbaordView,CareerPathView){
+    'views/js/careerPath',
+    'views/js/browseCourses',
+    'views/js/profile',
+    'views/js/jobs'
+], function($, _, Backbone,utils, BaseController,DefaultLayoutDef,JSDashbaordView,CareerPathView,BrowseCoursesView,ProfileView,JobsView){
 
 	var JsPortalController = BaseController.extend({
 		
@@ -24,7 +27,14 @@ define([
 			else if(page.name == "partners"){
 				pageViewDef = PartnersViewDef;
 			}
-			
+			else if(page.name == "jsCourses"){
+				pageViewDef = BrowseCoursesView;
+			}
+			else if(page.name == "jsProfile"){
+				pageViewDef = ProfileView;
+			}else if(page.name == "jsJobs"){
+				pageViewDef = JobsView;
+			}
 			return {
 				pageViewDef : pageViewDef,
 				layoutViewDef : layoutViewDef,

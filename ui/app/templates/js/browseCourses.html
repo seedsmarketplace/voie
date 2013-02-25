@@ -1,215 +1,647 @@
-<div class="container_16">
-	<div class="grid_3">
-		<div class="box round first grid">
-		    <h2>
-		        Industry
-		    </h2>
-		    <div class="block">
-				<div class="dataTables_wrapper">
-					<div class="dataTables_length">
-						<label>
-							<select id="industry">
-					        	<option value="IT">
-					        		Information Technology
-					        	</option>
-					        	<option value="HC">
-					        		Health Care
-					        	</option>
-					        	<option value="EDU">
-					        		Education
-					        	</option>
-					        </select>
-						 </label>
-					</div>
-					<table class="data display datatable" id="industries">
+ <div id="shadepart" style="margin-top: -120px"></div>
+ <div class="grid_2">
+
+            <div class="box round first grid" style="height: 500px;">
+              <h2>
+                    Courses Category  </h2>
+                <div class="block">
+                
+                 <table class="data display datatable">
 						<thead>
 							<tr>
 							</tr>
 						</thead>
 						<tbody>
-							<tr data-categoryCode="it_sd" class="gradeA odd selected">
-								<td class="">Software Development</td>
+							<tr  class="gradeA even">
+								<td ><a class="menuitem" id="all">View All Courses</a></td>
 							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Web Application Development</td>
+							<tr  class="gradeA even">
+								<td ><a class="menuitem" id="sap">SAP</a></td>
 							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Server Side Development</td>
+							<tr  class="gradeA even">
+								<td ><a class="menuitem" id="java">JAVA</a></td>
 							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Server Side Development</td>
+							<tr  class="gradeA even">
+								<td ><a class="menuitem" id="informatica">Informatica</a></td>
 							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Front-End Engineering</td>
+							<tr  class="gradeA even">
+								<td ><a class="menuitem" id="oracle">Oracle</a></td>
 							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Database development</td>
+							<tr  class="gradeA even">
+								<td ><a class="menuitem" id="microsoft">Microsoft</a></td>
 							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Cloud Technologies</td>
+							<tr  class="gradeA even">
+								<td ><a class="menuitem" id="cms">CMS</a></td>
 							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Mobile App Development</td>
-							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Application design & Architecture</td>
-							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">System Administration</td>
-							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Network Management</td>
-							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">VoIP Technologies</td>
-							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">Security</td>
-							</tr>
-							<tr data-categoryCode="it_wad" class="gradeA even">
-								<td class="">ERP</td>
-							</tr>						
 						</tbody>
 					</table>
-				</div>	
-		    </div>
-		</div>
-	</div>
-	<div class="grid_7">
-		<div class="box round first grid">
-		    <h2>
-		        Positions
-		    </h2>
-		    <div class="block">
-		    	<div class="dataTables_wrapper">
-					<div class="dataTables_length">
-						<label> Job Grade
-							<select id="jobGrade">
-					        	<option value="jg_comp">
-					        		Compensation
-					        	</option>
-					        	<option value="jg_level">
-					        		Level
-					        	</option>
-					        </select>
-						 </label>
-					</div>
-					<div class="clear"></div>
-					<div id="slider_steps" style="width:100%;border:0px solid green;height:20px;margin:5px 0 5px 0"> 
-						<span style="float:left;width:20%;border:0px solid coral">Grade 1</span>
-						<span style="float:right;text-align:right;width:20%;border:0px solid coral">Grade 5</span>
-					</div>
-					<div id="jobGradeSlider"></div>
-					<table class="data display datatable" id="positions"  style="margin:10px 0 0 0">
-						<thead>
-							<tr>
-								<th class="sorting">Title</th>
-								<th class="sorting">Location</th>
-								<th class="sorting">Date Posted</th>
-							</tr>								
-						</thead>
-						<tbody>
-							<tr data-categoryCode="it_sd" class="gradeA odd">
-								<td class="">Solutions Architect</td>
-								<td class="">Palo Alto, CA</td>
-								<td class="">10-FEB-2013</td>
-							</tr>
-							<tr data-categoryCode="it_sd" class="gradeA odd selected" >
-								<td class="">Lead Java Engineer</td>
-								<td class="">Santa Clara, CA</td>
-								<td class="">10-FEB-2013</td>
-							</tr>
-							<tr data-categoryCode="it_sd" class="gradeA odd">
-								<td class="">Technical Leader</td>
-								<td class="">San Jose, CA</td>
-								<td class="">12-FEB-2013</td>
-							</tr>
-							<tr data-categoryCode="it_sd" class="gradeA odd">
-								<td class="">Technical Leader</td>
-								<td class="">San Jose, CA</td>
-								<td class="">12-FEB-2013</td>
-							</tr>
-							<tr data-categoryCode="it_sd" class="gradeA odd">
-								<td class="">IT Engineer</td>
-								<td class="">Sunnyvale, CA</td>
-								<td class="">22-FEB-2013</td>
-							</tr>
-							<tr data-categoryCode="it_sd" class="gradeA odd">
-								<td class="">Senior Java Developer</td>
-								<td class="">Fremont, CA</td>
-								<td class="">22-FEB-2013</td>
-							</tr>
-							
-						</tbody>
-					</table>
-					
-				</div>
-			</div>	
-			<div class="clear"></div>
-			
-		 </div>
-	</div>
-	<div class="grid_4">
-		<div class="box round first grid">
-		    <h2>
-		        Skill & Experience gap analysis 
-		    </h2>
-			<div class="block">
-		    	<div class="message success">
-		    		<h6>Skills  - satisfactory</h6>
-	                 <p>
-       		          	Basic java Development, Web Services, J2EE  	 
-           	    	 </p>
+                    <!--  <ul class="section menu" id="sidemenu">
+                    	<li><a class="menuitem" id="all">View All Courses</a></li>
+                        <li><a class="menuitem" id="sap">SAP</a></li>
+                        <li><a class="menuitem" id="java">JAVA</a></li>
+                        <li><a class="menuitem" id="informatica">Informatica</a></li>
+                        <li><a class="menuitem" id="oracle">Oracle</a>  </li>
+   						<li><a class="menuitem" id="microsoft">Microsoft</a></li>
+                        <li><a class="menuitem" id="cms">CMS</a></li>
+                    </ul>-->
                 </div>
-		    </div>
-			<div class="">
-		    	<div class="message warning">
-	                <h6>Skills  - upgrades required</h6>
-   		             <p>
-       		          	<a href="as">Advanced Java development</a> 	 
-           	    	 </p>
-                </div>
-		    </div>
-			<div class="">
-		    	<div class="message error">
-	                 <h6>Skills - missing</h6>
-   		             <p>
-       		          	Technical Leadership, Database administration  
-           	    	 </p>
-                </div>
-		    </div>
-		 </div>
-		 
-		 <div class="box round ">
-		    <h2>
-		        Recommended Learning
-		    </h2>
-			<div class="block">
-		    	<div class="message data">
-	                 <h5>Java Programming Comprehensive Introduction</h5>
-   		             <p>
-       		          	Course 471, 4 days   
-           	    	 </p>
-                </div>
-		    </div>
-			<div class="">
-		    	<div class="message data">
-	                 <h5>Java Best Practices and Design Patterns</h5>
-   		             <p>
-       		          	Course 516, 4 days   
-           	    	 </p>
-                </div>
-		    </div>
-			<div class="">
-		    	<div class="message data">
-	                 <h5>Building XML Web Services with Java</h5>
-   		             <p>
-       		          	Course 516, 4 days   
-           	    	 </p>
-                </div>
-		    </div>
-		 </div>
-		 
-	</div>
-	
-</div>	
+            </div>
+        </div>
+        <div class="grid_10">
+            <div class="box round first">
+                
+                    <h2>  Courses  </h2> 
+                    <div class="block">
+               
+               
+               
+               
+               <!-- gallery part=======================================================================================================-->
+                  
+  <div style="width:100%; height:457px">
+   
+   
+    <div style="" id="mainbox">
+
+<div id="gallerybox">
+
+<!--Sap module-->
+
+<div class="light1 all sap">
+
+<div class="viewmore">
+<span class="coursetitle">SAP Hana </span>
+<div style="border:1px solid #204562"></div>
+ <br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>15 Days</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>10.00 a.m. to 12 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+</div>
+
+<div class="light1 all sap">
+
+
+<div class="viewmore">
+<span class="coursetitle">SAP BI </span>
+<div style="border:1px solid #204562"></div>
+ <br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>15 Days</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>10.00 a.m. to 12 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+</div>
+
+<!--Java module-->
+
+
+<div class="light1 java all">
+<div class="viewmore">
+<span class="coursetitle">Advanced Java </span>
+
+<div style="border:1px solid #204562"></div>
+
+ <br>
+  
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>One Week</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>9.00 a.m. to 11 a.m</td></tr>
+  
+   </table>
+</div>
+  
+  
+  
+  
+  <button class="btn btn-blue vdetails">View Details</button>
+  </div>
+
+
+<div class="light1 java all">
+
+<div class="viewmore">
+<span class="coursetitle">Java Struts Framework </span>
+<div style="border:1px solid #204562"></div><br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>One Week</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>9.00 a.m. to 11 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+</div>
+<div class="light1 java all">
+
+<div class="viewmore">
+<span class="coursetitle">Webservices</span>
+<div style="border:1px solid #204562"></div><br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>One Week</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>9.00 a.m. to 11 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+
+</div>
+<div class="light1 java all">
+
+<div class="viewmore">
+<span class="coursetitle">Design Patterns </span>
+<div style="border:1px solid #204562"></div><br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>One Week</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>9.00 a.m. to 11 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+</div>
+
+<!--Informatica module-->
+<div class="light1 informatica all">
+
+
+<div class="viewmore">
+<span class="coursetitle">Online Training </span>
+<div style="border:1px solid #204562"></div>
+ <br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>5 Days</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>200 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>6.00 a.m. to 8 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+
+</div>
+<div class="light1 informatica all">
+
+
+
+<div class="viewmore">
+<span class="coursetitle">ETL Real Time Training </span>
+<div style="border:1px solid #204562"></div>
+ <br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>3 Days</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>200 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>6.00 a.m. to 8 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+
+
+</div>
+
+<!--Oracle module-->
+
+<div class="light1 oracle all">
+
+
+
+
+<div class="viewmore">
+<span class="coursetitle">Certification Training </span>
+<div style="border:1px solid #204562"></div>
+ <br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>30 Days</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>700 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>6.00 a.m. to 8 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+
+
+
+
+
+</div>
+
+
+<!--Microsoft module-->
+
+
+<div class="light1 microsoft all">
+
+
+
+<div class="viewmore">
+<span class="coursetitle">Dot Net 4 </span>
+<div style="border:1px solid #204562"></div>
+ <br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>One Week</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>9.00 a.m. to 11 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+</div>
+
+<!--CMS module-->
+
+<div class="light1 cms all">
+
+
+
+
+
+<div class="viewmore">
+<span class="coursetitle">Wordpress </span>
+<div style="border:1px solid #204562"></div>
+ <br>
+  <table class="coursedetails">
+  <tr><td>Duration</td><td width="20px" align="center">:</td><td>15 Days</td></tr>
+  <tr><td>Fee</td><td align="center">:</td><td>400 USD</td></tr>
+  <tr><td>Training Hours</td><td align="center">:</td><td>10.00 a.m. to 12 a.m</td></tr>
+   </table>
+</div>
+  <button class="btn btn-blue vdetails">View Details</button>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+<!--Titles Space=========================================================================================================================================================== -->
+
+
+
+<div id="lightbase">
+<div id="loading"><img src="assets/images/loading.gif"></div>
+
+<div id="close" style="text-align:right"><img src="assets/images/close.png" style="cursor:pointer"> </div>
+
+<!--Sap module-->
+
+<div class="lightboxcontainer" id="title6"> <img src="assets/images/image_01.jpg" width="405">
+<div class="titlemain">
+	<span class="subhead1">You will learn how to </span>
+			<ul class="subtitlelist">
+						<li>	In Memory Computing (Row Store, Column Store, Persistency Layer, Architectural Concept) </li>
+                            
+                            <li>HANA based Real-time Operational Analytics HANA based Agile Data Marts for Rapid Prototyping with Analytic Models</li>
+                            <li>New Modeling Paradigm in order to provide agility and flexibility from business question to report </li>
+							<li>In Memory Computing (Administration and Monitoring)</li>
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>15 Days</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>400 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>Classes</td><td align="center">:</td><td>10:00 a.m  - 12:00 a.m</td></tr>
+                            </table>
+							</div>
+</div>
+<div class="lightboxcontainer" id="title5"> <img src="assets/images/image_02.jpg" width="405">
+							<div class="titlemain">
+							<span class="subhead1">You will learn how to </span><br>
+							<div style="border:1px solid #0F4E95"></div><br>
+
+                            <ul class="subtitlelist">
+								<li>Understanding Data warehousing Methodology</li>
+								<li>OLTP vs. OLAP</li>
+								<li>DSS Functionality</li>
+								<li>Requirement Analysis of BW.</li>							
+								<li>Versions of BW</li>							
+								<li>Difference between BW &Other D.W.Tools</li>							
+
+							</ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>15 Days</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>400 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center">:</td><td>10:00 a.m - 12:00 a.m</td></tr>
+                            </table>
+							</div>
+
+</div>
+
+<!--Java module-->
+
+<div class="lightboxcontainer" id="title5"> <img src="assets/images/image_03.jpg" width="405">
+							<div class="titlemain">
+							<span class="subhead1">You will learn how to </span><br>
+							<div style="border:1px solid #0F4E95"></div><br>
+
+                            <ul class="subtitlelist">
+								<li>Build robust console and GUI applications using Java's object-oriented features</li>
+								<li>Create robust applications using Java class libraries</li>
+								<li>Develop platform-independent GUIs</li>
+							</ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>One week</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>400 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center">:</td><td>9:00 a.m to 11:00 a.m</td></tr>
+                            </table>
+							</div>
+
+</div>
+
+
+
+<div class="lightboxcontainer" id="title6"> <img src="assets/images/image_04.jpg" width="405">
+
+							<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+<br>							
+                            							<div style="border:1px solid #0F4E95"></div><br>
+
+                            <ul class="subtitlelist">
+								<li>Build scalable enterprise web applications with Struts 2</li>
+								<li>Detect and report user input errors with the Struts 2 validation framework</li>
+								<li>Access data with OGNL and generate results with JSP and Freemarker</li>
+							     <li>Write and configure Struts 2 interceptors to achieve modularity and sophisticated functionality</li>
+							     <li>Exploit the Struts 2 Tag Library to seamlessly integrate Ajax functionality</li>
+							     
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>One week</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>400 USD</td></tr>
+                            <tr><td height="20"><span style="font-weight:bold">Training Hours</span></td><td align="center">:</td><td>9:00 a.m to 11 a.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+
+</div>
+
+
+
+
+<div class="lightboxcontainer" id="title7"> <img src="assets/images/image_05.jpg" width="405">
+
+
+	<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+							<br>							
+                            							<div style="border:1px solid #0F4E95"></div><br>
+
+                            
+                            <ul class="subtitlelist">
+								<li>Develop, deploy and monitor web services and web service clients with JAX-WS</li>
+								<li>Implement a Service-Oriented Architecture (SOA) using web services</li>
+								<li>Create and deploy WSDL-first and code-first web services</li>
+							     <li>Build synchronous and asynchronous web service clients in Java</li>
+							     <li>Deliver RESTful web services for server-side AJAX</li>
+							     
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>One week</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>200 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>First Day Orientation</td><td align="center">:</td><td>8:00 a.m  - 9:00 a.m</td></tr>
+                            <tr><td>Standard Class Hours</td><td align="center">:</td><td>9:00 a.m - 4:30 a.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+
+
+
+</div>
+
+
+
+<div class="lightboxcontainer" id="title8"> <img src="assets/images/image_12.jpg" width="405">
+						<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+						
+                        <br>							
+                            							<div style="border:1px solid #0F4E95"></div><br>
+
+                        	<ul class="subtitlelist">
+								<li>Employ best practices to rapidly build reliable and scalable Java applications</li>
+								<li>Effectively apply Test Driven Development to enhance program maintainability</li>
+								<li>Solve architectural problems with proven design patterns </li>
+                                <li>Write robust threaded applications and avoid </li>
+							     <li>concurrency hazards</li>
+							     
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>One week</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>500 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>First Day Orientation</td><td align="center">:</td><td>8:00 a.m  - 9:00 a.m</td></tr>
+                            <tr><td>Standard Class Hours</td><td align="center">:</td><td>9:00 a.m - 4:30 a.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Informatica module-->
+
+<div class="lightboxcontainer" id="title5"> <img src="assets/images/image_17.png" width="405">
+
+
+							<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+							<ul class="subtitlelist">
+								<li>	This five-day Informatica Training Program provides the basic skills and knowledge developers who are new to Informatica PowerCenter are required to implement data integration projects, exposing core features of PowerCenter Informatica through lectures and hands-on exercise</li>
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>5 Days</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>200 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>Classes</td><td align="center">:</td><td>6:00 a.m  - 8:00 a.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+
+</div>
+
+<div class="lightboxcontainer" id="title6"> <img src="assets/images/image_18.png" width="405">
+
+
+<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+							<ul class="subtitlelist">
+								<li>	This three-day Informatica Training Program complements and extends PowerCenter 8x/9.0 Level One Developer with advanced topics and extended labs.</li>
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>3 Days</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>200 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>Classes</td><td align="center">:</td><td>6:00 a.m  - 8:00 a.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+
+</div>
+
+
+<!--Oracle module-->
+
+<div class="lightboxcontainer" id="title8"> <img src="assets/images/image_20.png" width="405">
+
+							<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+							<ul class="subtitlelist">
+								<li>	ORACLE 9I-PROGRAM WITH PL/SQL	</li>
+								<li>	ORACLE9I-DATABASE ADMINISTRATION FUNDAMENTALS (PRODUCTION - I)</li>
+								<li>	ORACLE9I-DATABASE ADMINISTRATION FUNDAMENTALS (PRODUCTION - II) </li>
+								<li>	ORACLE 9I FORMS DEVELOPER-BUILD INTERNET APPLICATIONS </li>
+								<li>	ORACLE9I DATABASE: PERFORMANCE TUNING </li>
+								<li>	DIPLOMA IN DATABASE ADMINISTRATION USING ORACLE 10G </li>
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>30 days</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>700 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>Classes</td><td align="center">:</td><td>6:00 a.m  - 8:00 a.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+
+</div>
+
+
+<!--Microsoft module-->
+
+<div class="lightboxcontainer" id="title5"> <img src="assets/images/image_21.png" width="405">
+
+
+
+<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+							<ul class="subtitlelist">
+								<li>	Concepts of relational and object relational databases, SQL programming language, create and maintain database objects and to store, retrieve, and manipulate data. Participants also learn to retrieve data by using advanced techniques such as ROLLUP, CUBE, set operators, and hierarchical retrievalmanage services on any authorized Informatica Platform.</li>
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>40 hours</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>200 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>Classes</td><td align="center">:</td><td>3:00 p.m  - 5:00 p.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+
+</div>
+
+<!--CMS module-->
+<div class="lightboxcontainer" id="title1"><img src="assets/images/image_13.png" width="405">
+
+
+<div class="titlemain">
+							<span class="subhead1">You will learn how to </span>
+							<br>							
+                            							<div style="border:1px solid #0F4E95"></div><br>
+
+                            
+                            <ul class="subtitlelist">
+								<li>	Create robust applications using Java class libraries</li>
+								<li>	Develop platform-independent GUIs</li>
+								<li>	Read and write data using Java streams </li>
+                                <li>	Retrieve data from a relational database with JDBC </li>
+							     
+
+                            </ul>
+                            <table>
+                            <tr><td><span style="font-weight:bold">Duration</span></td><td width="20" align="center">:</td><td>One week</td></tr>
+                            <tr><td><span style="font-weight:bold">Fee</span></td><td align="center">:</td><td>400 USD</td></tr>
+                            <tr><td><span style="font-weight:bold">Training Hours</span></td><td align="center"></td><td></td></tr>
+                            <tr><td>First Day Orientation</td><td align="center">:</td><td>8:00 a.m  - 9:00 a.m</td></tr>
+                            <tr><td>Standard Class Hours</td><td align="center">:</td><td>9:00 a.m - 4:30 a.m</td></tr>
+                            
+                            </table>
+							</div>
+
+
+
+
+</div>
+
+<!--title part ends here============================================================================================================================================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                    </div>
+            </div>
+        </div>

@@ -51,3 +51,40 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*    */
+#courcess {
+    min-height:800px;
+    margin-bottom: -7px;
+    margin-left: -4px;
+    margin-top: -8px;
+    text-align: center;
+    vertical-align: top;
+    width:auto;
+}
+
+
+
+#courcess ul{
+    list-style:none;
+}
+
+#courcess img{
+    border: 3px double #2e5e79;
+    border-radius:10px 10px 0 0;
+}
+
+#courcess ul li {
+    background: -moz-linear-gradient(center top , #E1F2FC, #CAE9FD) repeat scroll 0 0 transparent;
+    border: 1px solid #CADCEA;
+    color: #225B86;
+    text-shadow: 0 1px 0 #FFFFFF;
+    border-radius:10px 10px 0 0;
+    float: left;
+
+    min-height:325px;
+    margin: 25px 0px 0 30px;
+    width: 260px;
+    padding: 10px 10px 0px 10px;
+    text-align:left;
+}
