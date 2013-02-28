@@ -15,6 +15,11 @@ define([
 				throw ( "Unable to render fragement. Invalid view class " + ViewClass );
 			}
 		},
+		
+		getFragment : function(selector){
+			return $(selector).data("backboneView");
+		},
+		
 	};
 	
 	return RenderUtil;

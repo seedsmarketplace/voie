@@ -21,6 +21,7 @@ define([
 		renderTemplate : function (templateContext){
 			try {
 				utils.TemplateUtil.renderHTML(this.templateName,templateContext,this.$el,(function(){
+					this.$el.data("backboneView",this);
 					//IF view does not specify an el or a tag or a className, assume the view does not want framework to generate
 					//a wrapper div element However since Backbone will generate a DIV in these circumstances, remove the wrapper div after rendering is complete
 					//This needs to be done after the rendering is complete.

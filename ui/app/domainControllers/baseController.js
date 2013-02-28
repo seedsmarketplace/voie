@@ -45,9 +45,10 @@ define([
 			  currentLayout = utils.RenderUtil.renderView(desiredPageDetails.layoutViewDef,{domain : page.domain},{el : $("body")});
 			  currentLayoutView = desiredPageDetails.layoutViewDef;
 			}
-			if(currentLayoutView.beforeShowPage){
-			  currentLayoutView.beforeShowPage(page);
+			if(currentLayout.beforeShowPage){
+				currentLayout.beforeShowPage(page);
 			}
+
 			(function(){
 				  this.showPage(page,params,currentLayout.targetElSelector,desiredPageDetails);
 			}).defer(100,this);

@@ -17,6 +17,8 @@ define([ 'jquery', 'underscore', 'backbone', 'backboneExt', 'utils',
 		},
 		
 		_doFilter:function(e){
+			$(".selected").removeClass("selected");
+			$(e.target).parent().parent().addClass("selected");
 			var keyword=$(e.target).text();
 			if(keyword==='Any')
 				keyword='';

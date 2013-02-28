@@ -5,10 +5,12 @@ define([
     'utils',
     'domainControllers/baseController',
     'views/emp/defaultLayout',
-    //'views/js/jsDashboard',
-    //'views/js/careerPath'
+    'views/emp/empDashboard',
+    'views/emp/findProspects',
+    'views/emp/jobs',
+    'views/emp/profile'
 ], function($, _, Backbone,utils, BaseController,DefaultLayoutDef
-		//,JSDashbaordView,CareerPathView
+		,EmpDashbaordView,FindProspects,Jobs,Profile
 		){
 
 	var EmpPortalController = BaseController.extend({
@@ -18,17 +20,20 @@ define([
 		},
 		
 		getViewDetails : function(page,params){
-			//var pageViewDef = JSDashbaordView;
+			var pageViewDef = EmpDashbaordView;
 			var layoutViewDef = DefaultLayoutDef;
-			if(page.name == "jsCareer"){
-				pageViewDef = CareerPathView;
-			}
-			else if(page.name == "partners"){
-				pageViewDef = PartnersViewDef;
+			if (page.name == "empDashboard") {
+				pageViewDef = EmpDashbaordView;
+			} else if (page.name == "empFindProspects") {
+				pageViewDef = FindProspects;
+			} else if (page.name == "empAddPosition") {
+				pageViewDef = Jobs;
+			} else if (page.name == "empProfile") {
+				pageViewDef = Profile;
 			}
 			
 			return {
-				//pageViewDef : pageViewDef,
+				pageViewDef : pageViewDef,
 				layoutViewDef : layoutViewDef,
 				data : {},
 				context : {}

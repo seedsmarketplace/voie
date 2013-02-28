@@ -20,10 +20,11 @@ define([
 		},
 		
 		events:{
-			"click .menuitem":"_doSwitch",
+			"click .pmenuitem":"_doSwitch",
 			"click .addskill":"_openDilog",
 			"change .skillset":"_renderSAQ",
-			"click #closebut":"_closeSAQ"
+			"click #closebut":"_closeSAQ",
+			"click .closediv":"_submitSAQ"
 		},
 		
 		render : function(){
@@ -34,7 +35,8 @@ define([
 			return this;
 		},
 		_doSwitch:function(event){
-			
+			$(".selected").removeClass("selected");
+			$(event.target).parent().parent().addClass("selected");
 			var section=$(event.target).attr('data-type');
 			$("div.info").hide();
 			$('div[data-type="'+section+'"]').show();
@@ -58,6 +60,10 @@ define([
 			$("."+saq).show();
 			
 			
+		},
+		_submitSAQ:function(){
+			$("#lightbase").fadeOut();
+			$("#shadepart").fadeOut(500);
 		},
 		
 		onDataReady : function(){

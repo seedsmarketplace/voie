@@ -6,6 +6,12 @@
 .menuitem {
 	cursor: pointer;
 }
+.pmenuitem {
+	cursor: pointer;
+}
+.cpmenuitem {
+	cursor: pointer;
+}
 
 #mainbox {
 	width: 100%;

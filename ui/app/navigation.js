@@ -96,6 +96,11 @@ define([
 		            	 domain : "empPortal"
 		             },
 		             {
+		            	 name : "empProfile", 
+		            	 path : "emp/profile/*path",
+		            	 domain : "empPortal"
+		             },
+		             {
 		            	 name : "empAddPosition", 
 		            	 path : "emp/addPosition/*path",
 		            	 domain : "empPortal"

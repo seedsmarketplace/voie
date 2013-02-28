@@ -64,7 +64,7 @@ define([
 		},
 		_doFilter : function(event) {
 			$(".selected").removeClass("selected");
-			$(event.target).parent().addClass("selected");
+			$(event.target).parent().parent().addClass("selected");
 			var citemid = $(event.target).attr("id");
 			$(".light1."+pitemid).fadeOut(500,function(){$(".light1."+citemid).fadeIn(500);});	
 			pitemid = citemid;
