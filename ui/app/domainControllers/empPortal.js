@@ -8,9 +8,11 @@ define([
     'views/emp/empDashboard',
     'views/emp/findProspects',
     'views/emp/jobs',
-    'views/emp/profile'
+    'views/emp/profile',
+    'views/emp/newUserLayout',
+    'views/emp/addProfile'
 ], function($, _, Backbone,utils, BaseController,DefaultLayoutDef
-		,EmpDashbaordView,FindProspects,Jobs,Profile
+		,EmpDashbaordView,FindProspects,Jobs,Profile,NewUserLayoutDef,AddProfileViewDef
 		){
 
 	var EmpPortalController = BaseController.extend({
@@ -22,7 +24,10 @@ define([
 		getViewDetails : function(page,params){
 			var pageViewDef = EmpDashbaordView;
 			var layoutViewDef = DefaultLayoutDef;
-			if (page.name == "empDashboard") {
+			if(page.name == "empAddProfile"){
+				pageViewDef = AddProfileViewDef;
+				layoutViewDef = NewUserLayoutDef;
+			}else if (page.name == "empDashboard") {
 				pageViewDef = EmpDashbaordView;
 			} else if (page.name == "empFindProspects") {
 				pageViewDef = FindProspects;

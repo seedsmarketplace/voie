@@ -9,8 +9,10 @@ define([
     'views/js/careerPath',
     'views/js/browseCourses',
     'views/js/profile',
-    'views/js/jobs'
-], function($, _, Backbone,utils, BaseController,DefaultLayoutDef,JSDashbaordView,CareerPathView,BrowseCoursesView,ProfileView,JobsView){
+    'views/js/jobs',
+    'views/js/newUserLayout',
+    'views/js/addProfile'
+], function($, _, Backbone,utils, BaseController,DefaultLayoutDef,JSDashbaordView,CareerPathView,BrowseCoursesView,ProfileView,JobsView,NewUserLayoutDef,AddProfileViewDef){
 
 	var JsPortalController = BaseController.extend({
 		
@@ -21,7 +23,11 @@ define([
 		getViewDetails : function(page,params){
 			var pageViewDef = JSDashbaordView;
 			var layoutViewDef = DefaultLayoutDef;
-			if(page.name == "jsCareer"){
+			if(page.name == "jsAddProfile"){
+				pageViewDef = AddProfileViewDef;
+				layoutViewDef = NewUserLayoutDef;
+			}
+			else if(page.name == "jsCareer"){
 				pageViewDef = CareerPathView;
 			}
 			else if(page.name == "partners"){

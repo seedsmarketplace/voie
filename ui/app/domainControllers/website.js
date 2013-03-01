@@ -11,12 +11,12 @@ define([
     'views/website/mission',
     'views/website/partners',
     'views/website/team',
-    'views/website/login',
+    'views/website/login','views/website/register'
 ], function($, _, Backbone,utils,
 		appStateIns,
 		BaseController,DefaultWebSiteLayout,LoginSignupLayout,
 		HomeViewDef,MissionViewDef,PartnersViewDef,
-		TeamViewDef,LoginViewDef){
+		TeamViewDef,LoginViewDef,RegisterViewDef){
 
 	var WebSiteController = BaseController.extend({
 		
@@ -44,6 +44,10 @@ define([
 			else if(page.name == "logout"){
 				appStateIns.set({user:null},{silent : true});
 				Backbone.history.navigate("#home/",true);			
+			}
+			else if(page.name == "register"){
+				pageViewDef = RegisterViewDef;
+				layoutViewDef = LoginSignupLayout;
 			}
 			
 			return {

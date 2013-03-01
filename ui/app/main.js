@@ -62,12 +62,23 @@ function(fnUtils,handlebarHelpers,jqueryUI,lightBox,treeView,
 	  else {
 		  if(appStateIns.get("user") != null) {
 			  var roles = appStateIns.get("user").get("roles")||["GUEST"];
+			  var profileStatus=appStateIns.get("user").get("profileStatus");
+			  utils.Logger.info("profileStatus : "+profileStatus);
 			  if($.inArray("JS",roles) > -1){
+				  if(profileStatus){
 				  Backbone.history.navigate("#js/dashboard/",true);
+				  }else{
+					  Backbone.history.navigate("#js/addProfile/",true);  
+				  }
+				  
 				  return;
 			  }
 			  else if($.inArray("EMP",roles) > -1){
+				  if(profileStatus){
 				  Backbone.history.navigate("#emp/dashboard/",true);
+				  }else{
+					  Backbone.history.navigate("#emp/addProfile/",true);  
+				  }
 				  return;
 			  }
 			  else if($.inArray("EXP",roles) > -1){

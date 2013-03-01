@@ -16,7 +16,7 @@ define([
 		            	 domain : "webSite"
 		             },		             
 		             {
-		            	 name : "resigter", 
+		            	 name : "register", 
 		            	 path : "register/*path",
 		            	 domain : "webSite"
 		             },
@@ -53,6 +53,11 @@ define([
 		             {
 		            	 name : "jsProfile", 
 		            	 path : "js/profile/*path",
+		            	 domain : "jsPortal"
+		             },
+		             {
+		            	 name : "jsAddProfile", 
+		            	 path : "js/addProfile/*path",
 		            	 domain : "jsPortal"
 		             },
 		             {
@@ -98,6 +103,11 @@ define([
 		             {
 		            	 name : "empProfile", 
 		            	 path : "emp/profile/*path",
+		            	 domain : "empPortal"
+		             },
+		             {
+		            	 name : "empAddProfile", 
+		            	 path : "emp/addProfile/*path",
 		            	 domain : "empPortal"
 		             },
 		             {
