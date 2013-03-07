@@ -41,6 +41,55 @@ define([
 		            	 domain : "webSite"
 		             },
 		             {
+		            	 name : "browseCourses", 
+		            	 path : "browseCourses/*path",
+		            	 domain : "webSite"
+		             },
+		             
+		             
+		             {
+		            	 name : "updateSkills", 
+		            	 path : "updateSkills/*path",
+		            	 domain : "webSite"
+		             },
+		             {
+		            	 name : "searchJobs", 
+		            	 path : "searchJobs/*path",
+		            	 domain : "webSite"
+		             },
+		             {
+		            	 name : "findCoach", 
+		            	 path : "findCoach/*path",
+		            	 domain : "webSite"
+		             },
+		             {
+		            	 name : "findSponsor", 
+		            	 path : "findSponsor/*path",
+		            	 domain : "webSite"
+		             },
+		             {
+		            	 name : "talkToExpert", 
+		            	 path : "talkToExpert/*path",
+		            	 domain : "webSite"
+		             }, {
+		            	 name : "findTalent", 
+		            	 path : "findTalent/*path",
+		            	 domain : "webSite"
+		             },
+		             {
+		            	 name : "addRequirement", 
+		            	 path : "addRequirement/*path",
+		            	 domain : "webSite"
+		             },
+		             {
+		            	 name : "addCourse", 
+		            	 path : "addCourse/*path",
+		            	 domain : "webSite"
+		             },
+		             
+		             
+		             
+		             {
 		            	 name : "js", 
 		            	 path : "js/*path",
 		            	 domain : "jsPortal"

@@ -44,7 +44,7 @@ define([
 				return;
 			$(".form-container").hide();
 			
-			$(".msg").html("<p>Thanks for registering with SEEDS Market Place.</p>").show();
+			$(".msg").html("<p>Thanks for registering with SEED Market Place.</p>").show();
 		},
 		
 
