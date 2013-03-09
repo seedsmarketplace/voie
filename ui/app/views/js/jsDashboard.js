@@ -31,6 +31,13 @@ define([
 		},
 		
 		onRenderComplete : function(){
+			 var progressbar = $( ".progressbar" ),
+		      progressLabel = $( ".progress-label" );
+			 progressbar.progressbar({
+			      value: 80
+			    });
+			
+			progressLabel.text( progressbar.progressbar( "value" ) + "%" );
 		},
 	});
 		
