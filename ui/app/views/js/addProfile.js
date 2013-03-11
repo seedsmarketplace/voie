@@ -39,6 +39,7 @@ define([
 			
 		},
 		_submitForm:function(){
+			Backbone.history.navigate("#login/",true);
 		},
 		
 		onDataReady : function(){
