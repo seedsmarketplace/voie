@@ -10,7 +10,7 @@ define([
     'views/website/home',
     'views/website/mission',
     'views/website/partners',
-    'views/website/team',
+    'views/website/team','views/website/about',
     'views/website/login','views/website/register','views/website/browseCourses',
     'views/website/updateSkills','views/website/searchJobs','views/website/findCoach',
     'views/website/findSponsor','views/website/talkToExpert','views/website/findTalent',
@@ -19,7 +19,7 @@ define([
 		appStateIns,
 		BaseController,DefaultWebSiteLayout,LoginSignupLayout,
 		HomeViewDef,MissionViewDef,PartnersViewDef,
-		TeamViewDef,LoginViewDef,RegisterViewDef,BrowseCoursesViewDef,UpdateSkillsViewDef,SearchJobsViewDef,FindCoachViewDef,
+		TeamViewDef,AboutViewDef,LoginViewDef,RegisterViewDef,BrowseCoursesViewDef,UpdateSkillsViewDef,SearchJobsViewDef,FindCoachViewDef,
 		FindSponsorViewDef,TalkToExpertViewDef,FindTalentViewDef,AddRequirementViewDef,AddCourseViewDef
 ){
 
@@ -42,7 +42,12 @@ define([
 			else if(page.name == "team"){
 				pageViewDef = TeamViewDef;
 			}
+			else if(page.name == "about"){
+				pageViewDef = AboutViewDef;
+			}
 			else if(page.name == "login"){
+				appStateIns.set({redirect:params});
+				utils.Logger.debug(LoginViewDef.redirect);
 				pageViewDef = LoginViewDef;
 				layoutViewDef = LoginSignupLayout;
 			}

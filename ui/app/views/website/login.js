@@ -51,7 +51,10 @@ define([
 			if(userIns.get("username") == $("#username").val()
 				&& userIns.get("password") == $("#password").val()){
 				appStateIns.set({user:userIns},{silent : true});
-				Backbone.history.navigate("",true);
+				params=appStateIns.get("redirect");
+				var url;
+				if(params[0]){url=params[0]+"/"+params[1]+"/";}else{url="";}
+				Backbone.history.navigate(url,true);
 			}
 			else {
 				alert("Invalid Credentials");

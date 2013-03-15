@@ -35,7 +35,7 @@ define([
 				});
 			}
 			if(!isUserAuthorized){
-				Backbone.history.navigate("#home/",true);//Send to unauthorized
+				Backbone.history.navigate("#login/#"+page.path,true);//Send to unauthorized
 				return;
 			}
 			
