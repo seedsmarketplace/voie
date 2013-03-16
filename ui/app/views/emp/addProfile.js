@@ -41,8 +41,7 @@ define([
 			
 		},
 		_submitForm:function(){
-			Backbone.history.navigate("#login/",true);
-		},
+			Backbone.history.navigate("#emp/dashboard/",true);		},
 		
 		onDataReady : function(){
 		},
