@@ -96,8 +96,9 @@
 							
 							
 							<tr>
-					   <td colspan="2">
-							<button class="btn btn-grey step" data-type="prof" style="float: right;padding-right: 20px">Next</button>
+							<td>&nbsp;&nbsp;</td>
+					   <td >&nbsp;&nbsp;
+							<button class="btn btn-grey step" data-type="prof" style="float: left;">Next</button>
 							
 							</td>
 					   </tr>
@@ -157,10 +158,10 @@
                         
          
 							<tr>
-					     <td colspan="2" >
-							<button class="btn btn-grey step" data-type="personal" style="float:left;padding-left: 20px">Back</button>
-							
-							<button class="btn btn-orange" id="submit" style="float:right;padding-right: 20px">Submit</button>
+					     <td  >
+							<button class="btn btn-grey step" data-type="personal" style="float:right;">Back</button>&nbsp;&nbsp;
+							</td><td>&nbsp;&nbsp;
+							<button class="btn btn-grey step" data-type="industry" style="float:left;">Next</button>
 							</td>
 					   </tr>
                        
@@ -168,9 +169,52 @@
                        
        </table>
 			</div>
-			<!--  <div data-type="skill" data-id="skill" class="info">
-
-			</div>-->
+		  <div data-type="industry" data-id="industry" class="info">
+				 <table class="form">
+                        <tr>
+                            <td class="col1">
+                                <label>
+                                   Industry</label>
+                            </td>
+                            <td class="col2">
+                            	<select id="industry">
+									<option value="IT" selected="selected">Information Technology</option>
+									<option value="HC">Health Care</option>
+									<option value="EDU">Education</option>
+								</select>
+							</td>
+                        </tr>
+                         <tr>
+                            <td class="col1">
+                                <label>
+                                   category</label>
+                            </td>
+                            <td class="col2">
+                                 <select id="select" name="select"  class="dataValidate-mandatory">
+										<option value="0"> Select  category</option>
+	                                    <option value="1">Web Application Development</option>
+	                                    <option value="2"> Server Side Development </option>
+	                                    <option value="3">Database development</option>
+										<option value="4"> Front-End Engineering </option>
+										<option value="5"> Cloud Technologies </option>
+										<option value="6"> Mobile Application Development </option>
+										<option value="7"> Application design & Architecture </option>
+										<option value="8">System Administration </option>
+										<option value="9">System Administration </option>
+										<option value="10">Network Management </option>
+                         </select>  
+                            </td>
+                        </tr>
+                        <tr>
+					     <td  >
+							<button class="btn btn-grey step" data-type="industry" style="float:right;">Back</button>
+							&nbsp;&nbsp;
+							</td><td>&nbsp;&nbsp;
+							<button class="btn btn-orange"  id="submit" style="float:left;">Submit</button>
+							</td>
+					   </tr>
+                        </table>
+			</div>
 
 
 		</div>
