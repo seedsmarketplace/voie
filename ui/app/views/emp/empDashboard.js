@@ -37,7 +37,7 @@ define([
 			            [18, 17, 700, "Dot Net"], [7, 89, 900, "Others"]];
 			             
 			            var plot1 = $.jqplot('jstrendchart',[arr],{
-			                title: 'Job Seekers Trend',
+			                title: 'Job Seekers - Technology',
 			                seriesDefaults:{
 			                    renderer: $.jqplot.BubbleRenderer,
 			                    rendererOptions: {
@@ -130,7 +130,7 @@ define([
 			    // use the y2 axis on the right of the plot 
 			    //rather than the y axis on the left.
 			    seriesDefaults:{yaxis:'y2axis'},
-			    title: 'Jobs at Seed Market Place',
+			    title: 'Jobs Trend (2012-2013)',
 			    axes: {
 			      xaxis: {
 			        renderer:$.jqplot.DateAxisRenderer,
