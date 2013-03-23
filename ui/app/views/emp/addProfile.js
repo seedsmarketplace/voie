@@ -37,6 +37,8 @@ define([
 				
 			var section=$(event.target).attr('data-type');
 			$("div.info").hide();
+			var str=$('div[data-type="'+section+'"]').attr("title");
+			$(".title span").html(str);
 			$('div[data-type="'+section+'"]').show();
 			
 		},

@@ -51,7 +51,7 @@ define([
 
 			(function(){
 				  this.showPage(page,params,currentLayout.targetElSelector,desiredPageDetails);
-			}).defer(100,this);
+			}).defer(500,this);
 		},
 		
 		showPage : function(page,params,layoutTargetElSelector,desiredPageDetails){

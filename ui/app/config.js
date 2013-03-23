@@ -22,13 +22,19 @@ require.config({
 //    jqueryMouse : "../assets/js/jquery-ui/jquery.ui.mouse.min",
     
     //JQPlot
-    //<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="assets/js/jqPlot/excanvas.min.js"></script><![endif]-->
-    jqueryJQPlot : "../assets/js/jqPlot/jquery.jqplot.min",
-    jqueryJQPlotBarRenderer :  "../assets/js/jqPlot/plugins/jqplot.barRenderer.min",
-    jqueryJQPlotPilotRenderer : "../assets/js/jqPlot/plugins/jqplot.pieRenderer.min",
-    jqueryJQAxisRenderer : "../assets/js/jqPlot/plugins/jqplot.categoryAxisRenderer.min",
-    jqueryJQHighlighter : "../assets/js/jqPlot/plugins/jqplot.highlighter.min",
-    jqueryJQLabels : "../assets/js/jqPlot/plugins/jqplot.pointLabels.min", 
+    //<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="assets/js/jqPlot-1.7/excanvas.min.js"></script><![endif]-->
+    jqueryJQPlot : "../assets/js/jqPlot-1.7/jquery.jqplot.min",
+    jqueryJQPlotBarRenderer :  "../assets/js/jqPlot-1.7/plugins/jqplot.barRenderer.min",
+    jqueryJQPlotPilotRenderer : "../assets/js/jqPlot-1.7/plugins/jqplot.pieRenderer.min",
+    jqueryJQAxisRenderer : "../assets/js/jqPlot-1.7/plugins/jqplot.categoryAxisRenderer.min",
+    jqueryJQHighlighter : "../assets/js/jqPlot-1.7/plugins/jqplot.highlighter.min",
+    jqueryJQLabels : "../assets/js/jqPlot-1.7/plugins/jqplot.pointLabels.min", 
+    jqueryJQBubbleRenderer: "../assets/js/jqPlot-1.7/plugins/jqplot.bubbleRenderer.min",
+    
+    jqueryJQDateAxisRenderer:"../assets/js/jqPlot-1.7/plugins/jqplot.dateAxisRenderer.min",
+    jqueryJQOhlcRenderer:"../assets/js/jqPlot-1.7/plugins/jqplot.ohlcRenderer.min",
+    jqueryJQHighlighter:"../assets/js/jqPlot-1.7/plugins/jqplot.highlighter.min",
+    
     lightBox:'../assets/js/table/jquery.dataTables.min',
     treeView:'../assets/js/tree-view/jquery.treeview',
     
@@ -118,6 +124,19 @@ require.config({
     jqueryJQLabels : {
     	deps: ["jquery"]
     }, 
+    
+    jqueryJQBubbleRenderer:{
+    	deps: ["jquery","jqueryJQPlot"]
+    },
+    jqueryJQDateAxisRenderer:{
+    	deps: ["jquery","jqueryJQPlot"]
+    },
+    jqueryJQOhlcRenderer:{
+    	deps: ["jquery","jqueryJQPlot"]
+    },
+    jqueryJQHighlighter:{
+    	deps: ["jquery","jqueryJQPlot"]
+    },
         
     lightBox:{
     	deps: ["jquery"]
