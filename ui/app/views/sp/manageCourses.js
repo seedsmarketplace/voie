@@ -9,13 +9,34 @@ define([ 'jquery', 'underscore', 'backbone', 'backboneExt', 'utils',
 		templateName : 'sp/manageCourses',
 		
 		events:{
-			"click .filter":"_doFilter"
+			"click .filter":"_doFilter",
+			"click .viewdetails":"_showDilog",
+			"click #closelightbox":"_hideDilog",
+			"click #closelightbox2":"_closeAddNewCourse",
+			"click #cust_addnewcourse":"_addNewCourse",
+			"click #custbtn1":"_closeAddNewCourse"
 		},
 
 		initialize : function() {
 			_.bindAll(this);
 		},
 		
+		_showDilog:function(){
+			$("#lightbox").fadeIn();
+			
+		},
+		_hideDilog:function(){
+			$("#lightbox").fadeOut();
+			
+		},
+		_closeAddNewCourse:function(){
+			$("#addnewcourse").fadeOut();
+			
+		},
+		_addNewCourse:function(){
+			$("#addnewcourse").fadeIn();
+			
+		},
 		_doFilter:function(e){
 			$(".selected").removeClass("selected");
 			$(e.target).parent().parent().addClass("selected");

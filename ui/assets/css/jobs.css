@@ -256,7 +256,20 @@ height: 100%;
 	list-style-image: url("../img/bullet.png");
 	 font-size: 1.2em;
 }
-
+#lightbox{
+	
+background-color: #DBEAF9;
+    border: 2px solid #E1ECF7;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px #000000;
+    display: none;
+    height: 405px;
+    margin-left: 100px;
+    position: fixed;
+    width: 825px;
+    z-index: 600;	
+	
+	}
 #lightbox2{
 	background-color: #DBEAF9;
 	border: 2px solid #E1ECF7;
@@ -287,6 +300,18 @@ height: 100%;
 	
 	}	
 	
+	#closelightbox2	{
+border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 30px;
+    position: absolute;
+    text-align: right;
+    width: 90%;
+    z-index: 1001;
+		
+	
+	}
+	
 #loadingimg{
  background-color: #DBEAF9;
     border-radius: 10px 10px 10px 10px;
@@ -310,3 +335,17 @@ table#custtbl2 tr:first-child td{ background-color:#2161A9; color:#ffffff}
 
 #enroll_java1{ cursor:pointer}#enroll_java2{ cursor:pointer}
 .viewdetails{ cursor:pointer}
+
+#addnewcourse{
+	background-color: #DBEAF9;
+	border: 2px solid #E1ECF7;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 10px #000000;
+	display: none;
+	height: 550px;
+	margin-left: 100px;
+	position: fixed;
+	width: 600px;
+	z-index: 600;padding-right:50px; margin-top:-70px; 
+	}
+#addtitle{ float:right; color:#3465B4; font-size:13px; font-weight:bold; height:30px; padding-top:25px; border-bottom:#3465B4 solid 2px; width:500px; text-align:right; margin-bottom:30px}
