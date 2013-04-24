@@ -86,7 +86,11 @@ function(fnUtils,handlebarHelpers,jqueryUI,lightBox,treeView,
 				  return;
 			  }
 			  else if($.inArray("SP",roles) > -1){
+				  if(profileStatus){
 				  Backbone.history.navigate("#sp/dashboard/",true);
+				  }else{
+					  Backbone.history.navigate("#sp/addProfile/",true);  
+				  }
 				  return;
 			  }
 			  else if($.inArray("ADMIN",roles) > -1){

@@ -88,6 +88,13 @@ SeedData = {
 			profileStatus:true,
 			roles : ["SP"] 
 		},
+		"read-seeds/service/get_user/newsp@mydomain.com" : {
+			username : "newsp@mydomain.com",
+			password : "newsp",
+			name : "Service Provicer",
+			profileStatus:false,
+			roles : ["SP"] 
+		}
 		
 	}
 	

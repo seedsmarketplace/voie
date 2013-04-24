@@ -135,8 +135,23 @@ define([
 		            	 domain : "spPortal"
 		             },
 		             {
-		            	 name : "spAddService", 
-		            	 path : "sp/addSevice/*path",
+		            	 name : "spCourses", 
+		            	 path : "sp/courses/*path",
+		            	 domain : "spPortal"
+		             },
+		             {
+		            	 name : "spProfile", 
+		            	 path : "sp/profile/*path",
+		            	 domain : "spPortal"
+		             },
+		             {
+		            	 name : "spAddProfile", 
+		            	 path : "sp/addProfile/*path",
+		            	 domain : "spPortal"
+		             },
+		             {
+		            	 name : "spEnrollments", 
+		            	 path : "sp/enrollments/*path",
 		            	 domain : "spPortal"
 		             },
 		             {
