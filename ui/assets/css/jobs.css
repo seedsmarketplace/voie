@@ -348,4 +348,12 @@ table#custtbl2 tr:first-child td{ background-color:#2161A9; color:#ffffff}
 	width: 600px;
 	z-index: 600;padding-right:50px; margin-top:-70px; 
 	}
+
+
 #addtitle{ float:right; color:#3465B4; font-size:13px; font-weight:bold; height:30px; padding-top:25px; border-bottom:#3465B4 solid 2px; width:500px; text-align:right; margin-bottom:30px}
+
+.sptable tr td{
+	
+	height:70px; padding-left:20px; vertical-align: middle;
+	
+}

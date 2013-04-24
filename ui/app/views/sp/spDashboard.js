@@ -10,10 +10,10 @@ define([
 	
 	var JSDashboardView = backboneExt.SeedsView.extend({
 		
-		name : "JSDashboardView",
+		name : "SPDashboardView",
 		
 		
-		templateName : 'js/jsDashboard',
+		templateName : 'sp/spDashboard',
 		
 		initialize : function(){
 			_.bindAll(this);
