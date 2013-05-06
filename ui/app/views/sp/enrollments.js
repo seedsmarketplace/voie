@@ -11,8 +11,9 @@ define([ 'jquery', 'underscore', 'backbone', 'backboneExt', 'utils',
 		events:{
 			"click .filter":"_doFilter",
 			"click #enroll_java1":"_showDilog",
-			"click #enroll_java2":"_showDilog",
-			"click #closelightbox":"_hideDilog"
+			"click #enroll_java2":"_showDilog2",
+			"click #closelightbox":"_hideDilog",
+			"click #closelightbox1":"_hideDilog2"
 		},
 
 		initialize : function() {
@@ -33,6 +34,12 @@ define([ 'jquery', 'underscore', 'backbone', 'backboneExt', 'utils',
 		},
 		_hideDilog: function() {
 			$("#lightbox2").fadeOut();	
+		},
+		_showDilog2: function() {
+			$("#lightbox3").fadeIn();	
+		},
+		_hideDilog2: function() {
+			$("#lightbox3").fadeOut();	
 		},
 		render : function() {
 			this.renderTemplate({

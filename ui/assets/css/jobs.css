@@ -285,11 +285,36 @@ background-color: #DBEAF9;
 	
 	}
 	
+#lightbox3{
+	background-color: #DBEAF9;
+	border: 2px solid #E1ECF7;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 10px #000000;
+	display: none;
+	height: 405px;
+	margin-left: 220px;
+	position: fixed;
+	width: 825px;
+	z-index: 600;
+	padding-top: 10px;
 	
+	}
+		
 	
 	
 	
 #closelightbox{
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 30px;
+    position: absolute;
+    text-align: right;
+    width: 90%;
+    z-index: 1001;
+	
+	}	
+	
+	#closelightbox1{
 	border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 30px;
@@ -331,7 +356,12 @@ border-top-left-radius: 10px;
 table#custtbl2 tr td{ border:1px solid #333333; padding-top:10px; padding-bottom:10px; text-align:center }	
 table#custtbl2 tr:first-child td{ background-color:#2161A9; color:#ffffff}
 
-
+#datapart1{   background-color: #333333;
+    float: right;
+    height: 405px;
+    width: 400px;}	
+table#custtbl2 tr td{ border:1px solid #333333; padding-top:10px; padding-bottom:10px; text-align:center }	
+table#custtbl2 tr:first-child td{ background-color:#2161A9; color:#ffffff}
 
 #enroll_java1{ cursor:pointer}#enroll_java2{ cursor:pointer}
 .viewdetails{ cursor:pointer}
