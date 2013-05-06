@@ -11,7 +11,7 @@ define([ 'jquery', 'underscore', 'backbone', 'backboneExt', 'utils',
 		events:{
 			"click .filter":"_doFilter",
 			"click .viewdetails":"_showDilog",
-			"click #closelightbox":"_hideDilog",
+			"click #close":"_hideDilog",
 			"click #closelightbox2":"_closeAddNewCourse",
 			"click #cust_addnewcourse":"_addNewCourse",
 			"click #custbtn1":"_closeAddNewCourse"
@@ -21,12 +21,25 @@ define([ 'jquery', 'underscore', 'backbone', 'backboneExt', 'utils',
 			_.bindAll(this);
 		},
 		
-		_showDilog:function(){
-			$("#lightbox").fadeIn();
+		_showDilog:function(ev){
+			var d = $(ev.target).attr("id");
+			$("#lightbase").fadeIn();
+			$("#loading").fadeIn(1000);
+			$("#loading").fadeOut(1000, function() {
+				$("#close").fadeIn(500, 0);
+				$(".lightboxcontainer:eq(" + e+")" ).fadeOut(200, function() {
+					$("#title" + d ).fadeIn(600);
+					$("#shadepart").fadeTo(500, 0.8);
+					e = d;
+				});
+			});
+
 			
 		},
 		_hideDilog:function(){
-			$("#lightbox").fadeOut();
+			$("#lightbase,.lightboxcontainer").fadeOut(500);
+			$("#shadepart").fadeOut(500, 0);
+			$("#close").fadeOut(500, 0);
 			
 		},
 		_closeAddNewCourse:function(){
@@ -58,6 +71,7 @@ define([ 'jquery', 'underscore', 'backbone', 'backboneExt', 'utils',
 		},
 
 		onRenderComplete : function() {
+			window.e = 0;
 			this._table=$("#jobstable").dataTable();
 		},
 	});
